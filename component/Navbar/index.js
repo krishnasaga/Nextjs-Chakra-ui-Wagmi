@@ -107,10 +107,10 @@ export default function Navbar() {
               alignItems="center"
             >
               {/* <Logo /> */}
-              <VisuallyHidden>NCW Starter</VisuallyHidden>
+              <VisuallyHidden>Happy Positive Group</VisuallyHidden>
             </chakra.a>
             <chakra.h1 fontWeight="semibold" fontSize="2xl">
-              NCW Starter
+              Happy Positive Group
             </chakra.h1>
           </HStack>
           <HStack spacing={3} display="flex" alignItems="center">
@@ -156,7 +156,7 @@ export default function Navbar() {
               m={0}
               _focus={{ boxShadow: "none" }}
             >
-              Dashboard
+              About
             </Tab>
             <Tab
               fontWeight="semibold"
@@ -164,7 +164,7 @@ export default function Navbar() {
               m={0}
               _focus={{ boxShadow: "none" }}
             >
-              Portfolio
+              Events
             </Tab>
             <Tab
               fontWeight="semibold"
@@ -172,7 +172,7 @@ export default function Navbar() {
               m={0}
               _focus={{ boxShadow: "none" }}
             >
-              Wallet
+              Donate us
             </Tab>
             <Tab
               fontWeight="semibold"
