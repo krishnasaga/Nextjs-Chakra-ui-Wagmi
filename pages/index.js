@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Box } from "@chakra-ui/react";
-import { Navbar, Landpage, Footer } from "../component";
+import { Navbar, Landpage, Footer,EventCard } from "../component";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
 
       <Landpage />
-
+      <EventCard />
       <Footer />
     </Box>
   );
