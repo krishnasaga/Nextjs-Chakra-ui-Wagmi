@@ -15,7 +15,7 @@ export default function Home() {
   const bgColor = useColorModeValue("blue.200", "blue.500");
 
   return (
-    <Box px={8} py={32} mx="auto" backgroundImage={backgroundImage}>
+    <Box px={8} py={32} mx="auto"           backgroundImage={`url(${backgroundImage.src})`} backgroundSize={'fill'} backgroundPosition={'center'}>
       <Box
         w={{ base: "full", md: 11 / 12, xl: 9 / 12 }}
         mx="auto"
@@ -42,10 +42,10 @@ export default function Home() {
           in one single place.
         </chakra.h1>
         <chakra.p
+          
           px={{ base: 0, lg: 24 }}
           mb={6}
           fontSize={{ base: "lg", md: "xl" }}
-          color={useColorModeValue("gray.600", "gray.300")}
         >
           Featuring <a href="https://nextjs.org/">Nextjs</a> the react framework
           for production, <a href="https://chakra-ui.com/">Chakra-ui</a>{" "}
