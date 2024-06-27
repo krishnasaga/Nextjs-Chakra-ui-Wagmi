@@ -8,13 +8,14 @@ import {
   Text,
   Icon,
 } from "@chakra-ui/react";
+import backgroundImage from './backgroundImage.jpg';
 
 export default function Home() {
   // Button bgColor color
   const bgColor = useColorModeValue("blue.200", "blue.500");
 
   return (
-    <Box px={8} py={32} mx="auto">
+    <Box px={8} py={32} mx="auto" backgroundImage={backgroundImage}>
       <Box
         w={{ base: "full", md: 11 / 12, xl: 9 / 12 }}
         mx="auto"
