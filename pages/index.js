@@ -14,7 +14,6 @@ export default function Home() {
       <Navbar />
 
       <Landpage />
-      <EventCard />
       <Footer />
     </Box>
   );

@@ -15,7 +15,7 @@ export default function Home() {
   const bgColor = useColorModeValue("blue.200", "blue.500");
 
   return (
-    <Box px={8} py={32} mx="auto"           backgroundImage={`url(${backgroundImage.src})`} backgroundSize={'fill'} backgroundPosition={'center'}>
+    <Box px={8} py={32} mx="auto"           backgroundImage={`url(${backgroundImage.src})`} backgroundSize={'fill'} backgroundPosition={'center'} h={'100vh'}>
       <Box
         w={{ base: "full", md: 11 / 12, xl: 9 / 12 }}
         mx="auto"

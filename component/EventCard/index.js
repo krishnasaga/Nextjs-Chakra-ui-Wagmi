@@ -1,4 +1,5 @@
 import { Box, Button, Image, Text, AvatarGroup, Avatar, Link, Flex, Heading } from "@chakra-ui/react";
+import backgroundImage  from "./backgroundImage.jpg";
 
 const PartyNightCard = () => {
   return (
@@ -15,7 +16,7 @@ const PartyNightCard = () => {
         <Text fontSize="sm" color="gray.500">SAT, JUN 29, 2024, 1:30 AM IST</Text>
         <Heading as="h3" size="lg" mt="1" mb="2">PARTY NIGHT!</Heading>
         <Image 
-          src="https://picsum.photos/400/200path-to-your-image.png" 
+          src={backgroundImage.src} 
           alt="Party Night"
           borderRadius="md"
           mb="3"

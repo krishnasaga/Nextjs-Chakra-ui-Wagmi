@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   chakra,
   Box,
@@ -15,11 +14,9 @@ import {
   InputGroup,
   InputLeftElement,
   Input,
-  Tabs,
-  TabList,
-  Tab,
   Spacer,
   useColorMode,
+  Link,
 } from "@chakra-ui/react";
 
 import { WalletModel } from "..";
@@ -148,50 +145,53 @@ export default function Navbar() {
         borderWidth={0}
         overflowX="auto"
       >
-        <Tabs defaultIndex={1} borderBottomColor="transparent">
-          <TabList>
-            <Tab
-              fontWeight="semibold"
-              py={4}
-              m={0}
-              _focus={{ boxShadow: "none" }}
-            >
-              About
-            </Tab>
-            <Tab
-              fontWeight="semibold"
-              py={4}
-              m={0}
-              _focus={{ boxShadow: "none" }}
-            >
-              Events
-            </Tab>
-            <Tab
-              fontWeight="semibold"
-              py={4}
-              m={0}
-              _focus={{ boxShadow: "none" }}
-            >
-              Donate us
-            </Tab>
-            <Tab
-              fontWeight="semibold"
-              py={4}
-              m={0}
-              _focus={{ boxShadow: "none" }}
-            >
-              Send
-            </Tab>
-            <Tab
-              fontWeight="semibold"
-              py={4}
-              m={0}
-              _focus={{ boxShadow: "none" }}
-            >
-              Transaction
-            </Tab>{" "}
-          </TabList>
-        </Tabs>
+        <HStack spacing={4}>
+          <Link
+            href="/"
+            fontWeight="semibold"
+            py={4}
+            m={0}
+            _focus={{ boxShadow: "none" }}
+          >
+            About
+          </Link>
+          <Link
+            href="/events"
+            fontWeight="semibold"
+            py={4}
+            m={0}
+            _focus={{ boxShadow: "none" }}
+          >
+            Events
+          </Link>
+          <Link
+            href="/donate"
+            fontWeight="semibold"
+            py={4}
+            m={0}
+            _focus={{ boxShadow: "none" }}
+          >
+            Donate us
+          </Link>
+          <Link
+            href="/send"
+            fontWeight="semibold"
+            py={4}
+            m={0}
+            _focus={{ boxShadow: "none" }}
+          >
+            Send
+          </Link>
+          <Link
+            href="/transaction"
+            fontWeight="semibold"
+            py={4}
+            m={0}
+            _focus={{ boxShadow: "none" }}
+          >
+            Transaction
+          </Link>
+        </HStack>
       </Flex>
     </Box>
   );
